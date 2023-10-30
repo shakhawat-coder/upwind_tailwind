@@ -47,6 +47,6 @@ $('.counter').counterUp({
 
 $(document).ready(function(){
   $(".menu_bar").click(function(){
-    $("menu").toggle();
+    $("menu").toggleClass("hidden");
   });
 });
