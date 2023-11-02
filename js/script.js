@@ -50,3 +50,15 @@ $(document).ready(function(){
     $("menu").toggleClass("hidden");
   });
 });
+
+// =================back to top button==================
+let toTop = document.querySelector(".back_to_top");
+window.addEventListener("scroll", () => {
+  if (window.scrollY>20){
+    toTop.classList.remove("hidden");
+  }
+  else{
+    toTop.classList.add("hidden");
+  }
+  
+})
